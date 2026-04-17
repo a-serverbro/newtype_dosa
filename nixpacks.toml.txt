@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["python3", "gcc"]
+
+[phases.build]
+cmds = ["gcc -O3 calista.c -o calista -pthread", "pip install -r requirements.txt"]
+
+[start]
+cmd = "python caalista.py"
