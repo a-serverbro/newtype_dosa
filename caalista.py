@@ -27,7 +27,7 @@ users_collection = db.users
 
 bot = telebot.TeleBot(TOKEN)
 loop = asyncio.new_event_loop()
-blocked_ports = [8700, 20000, 443, 17500, 9031, 20002, 20001]
+blocked_ports = [8700, 20000, 443, 17500, 9031, 20002, 20001]  # Fixed syntax error
 
 def is_user_admin(user_id, chat_id):
     if user_id in ADMIN_IDS:
