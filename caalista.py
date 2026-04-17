@@ -11,7 +11,7 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 from dotenv import load_dotenv
 
 # Load Environment Variables
-load_dotenv()
+load_dotenv('enivorment.env')
 TOKEN = os.getenv('TELEGRAM_TOKEN')
 MONGO_URI = os.getenv('MONGO_URI')
 # IDs should be comma-separated in Railway settings (e.g., 12345,67890)
@@ -28,7 +28,7 @@ users_collection = db.users
 
 bot = telebot.TeleBot(TOKEN)
 loop = asyncio.new_event_loop()
-blocked_ports = [8700, 20000, 443, 17500, 9031, 20002, 20001] [cite: 1]
+blocked_ports = [8700, 20000, 443, 17500, 9031, 20002, 20001]
 
 def is_user_admin(user_id, chat_id):
     """Checks if the user is a hardcoded admin or a channel admin."""
