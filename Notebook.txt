@@ -1,6 +1,0 @@
-user   lagow48098_db_user
-pass   sL711pgSHV4W5tV8
-
-mongodb+srv://lagow48098_db_user:<db_password>@clusterbro.wh2vcas.mongodb.net/?appName=clusterbro
-
-u4G07gvyZLTWrPpR
