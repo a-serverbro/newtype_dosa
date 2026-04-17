@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 load_dotenv()
 TOKEN = os.getenv('TELEGRAM_TOKEN')
 MONGO_URI = os.getenv('MONGO_URI')
-# IDs should be comma-separated in Railway settings (e.g., 12345,67890)
+# IDs should be comma-separated in Railway settings
 ADMIN_IDS = [int(i.strip()) for i in os.getenv('ADMIN_IDS', '').split(',') if i.strip()]
 CHANNEL_ID = int(os.getenv('CHANNEL_ID', -100))
 
